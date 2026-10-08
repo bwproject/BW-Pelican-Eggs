@@ -1,0 +1,31 @@
+# #######################################################################################################################
+#     ___       __       ___  __
+#    / _ |__ __/ /____  / _ \/ /_ _____ _
+#   / __ / // / __/ _ \/ ___/ / // / _ `/
+#  /_/ |_\_,_/\__/\___/_/  /_/\_,_/\_, /
+#                                 /___/ Updater-Config
+# 
+# #######################################################################################################################
+
+updater: 
+  self-updater: 
+    enable: true # AutoPlug
+    build: stable
+  java-updater: # WARNING! JAVA SHOULD NOT AUTOMATICALLY UPDATE WITHIN PTERODACTYL! THE PANEL WAS NOT BUILT FOR IT, AND MAY BREAK.
+    enable: false # CHANGE THIS VALUE AT YOUR OWN RISK. IT ***WILL*** BREAK DUE TO THE WAY THE VERSIONING SCRIPTS ARE MADE. THIS CANNOT BE FIXED.
+    profile: AUTOMATIC
+    version: # Will auto replace on install. (And theryby break Java updating uwu)
+  server-updater: 
+    enable: true # Server
+    profile: AUTOMATIC
+    software: # Will auto replace on install.
+    version: # Will auto replace on install.
+  plugins-updater: 
+    enable: true # Plugins
+    profile: AUTOMATIC
+  mods-updater: 
+    enable: true # Mods
+    profile: AUTOMATIC
+    version: # Will auto replace on install.
+
+  global-cool-down: 0
